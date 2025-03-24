@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    color: #dcdcdc;
+}
+
+h1, h2, h3, p {
+    color: #dcdcdc;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #dcdcdc;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f9c74f;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #444;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px;
+    background-color: #555;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px;
+    background-color: #444;
+    text-align: center;
+}
+
+.project-card {
+    background-color: #666;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #f9c74f;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #555;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact a {
+    color: #f9c74f;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.social-link {
+    margin: 0 15px;
+    color: #dcdcdc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #f9c74f;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
